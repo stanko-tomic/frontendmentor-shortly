@@ -4,7 +4,7 @@ import styles from "@/styles/LandingScreen.module.css";
 
 export const LandingScreen = () => {
   return (
-    <section role="landingscreen" className={styles.landingScreen}>
+    <section className={styles.landingScreen}>
       <div className={styles.container}>
         <div className={styles.content}>
           <h1 className={styles.heading}>More than just shorter links</h1>
