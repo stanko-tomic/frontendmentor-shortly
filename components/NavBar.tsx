@@ -39,11 +39,7 @@ export const NavBar = () => {
           </div>
 
           {activeMenu ? (
-            <div
-              className={styles.navLinks}
-              role="navigation"
-              id="mobileNavigation"
-            >
+            <div className={styles.navLinks} id="mobileNavigation">
               <div className={styles.navGroup}>
                 <Link href="/" aria-label="Link to Features">
                   Features

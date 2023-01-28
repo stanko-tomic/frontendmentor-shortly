@@ -4,7 +4,7 @@ import UrlShortener from "./UrlShortener";
 
 const Statistics = () => {
   return (
-    <main className={styles.statistics}>
+    <section className={styles.statistics}>
       <div className={styles.container}>
         <div className={styles.urlShortener}>
           <UrlShortener />
@@ -63,7 +63,7 @@ const Statistics = () => {
           </div>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 

@@ -58,7 +58,7 @@ const UrlShortener = () => {
   };
 
   return (
-    <main className={styles.urlShortener}>
+    <section className={styles.urlShortener}>
       <div className={styles.container}>
         <div className={styles.box}>
           <div className={styles.flex}>
@@ -116,7 +116,7 @@ const UrlShortener = () => {
           </div>
         )}
       </div>
-    </main>
+    </section>
   );
 };
 

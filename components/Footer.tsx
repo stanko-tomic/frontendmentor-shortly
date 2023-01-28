@@ -11,7 +11,7 @@ const Footer = () => {
           </div>
           <div className={styles.footerContent}>
             <div className={styles.footerLinks}>
-              <div className={styles.footerCategory} role="navigation">
+              <div className={styles.footerCategory} role="footerlinks">
                 <h5 id="Features" className={styles.categoryHeading}>
                   Features
                 </h5>
