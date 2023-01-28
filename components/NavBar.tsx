@@ -65,10 +65,7 @@ export const NavBar = () => {
               </div>
             </div>
           ) : (
-            <div
-              className={`${styles.navLinks} ${styles.mobileInActive}`}
-              role="navigation"
-            >
+            <div className={`${styles.navLinks} ${styles.mobileInActive}`}>
               <div className={styles.navGroup}>
                 <Link href="/" aria-label="Link to Features">
                   Features
