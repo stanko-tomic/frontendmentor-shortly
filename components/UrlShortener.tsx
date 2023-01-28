@@ -66,7 +66,7 @@ const UrlShortener = () => {
               <input
                 style={poppins.style}
                 type="url"
-                name="shortenUrlInput"
+                name="url"
                 pattern="https://.*"
                 placeholder="Shorten a link here..."
                 className={error ? styles.emptyInput : ""}
