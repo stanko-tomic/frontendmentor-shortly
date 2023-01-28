@@ -27,7 +27,7 @@ export default function Home() {
         <PreFooter />
         <Footer />
 
-        <div className="attribution">
+        {/* <div className="attribution">
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
             Frontend Mentor
@@ -37,7 +37,7 @@ export default function Home() {
             Stanko Tomic
           </a>
           .
-        </div>
+        </div> */}
       </main>
     </>
   );
