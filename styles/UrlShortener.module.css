@@ -1,0 +1,206 @@
+.container {
+  max-width: 69rem;
+  width: 100%;
+  padding-inline: 1rem;
+  margin-inline: auto;
+  margin-bottom: 3rem;
+}
+
+.box {
+  width: 100%;
+  background-image: url("/images/bg-shorten-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--primary-dark-violet);
+  padding-inline: 4rem;
+  padding-block: 3.125rem;
+  border-radius: 0.75rem;
+  margin-bottom: 2.5rem;
+  height: 10.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box .flex {
+  flex: 1;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.flexLinks {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.flex input {
+  flex: 1;
+  padding-inline: 2rem;
+  padding-block: 1.25rem;
+  border-radius: 0.75rem;
+  border: 0;
+  font-size: 1rem;
+  max-height: 3.625rem;
+}
+
+.flex input::placeholder {
+  color: var(--neutral-gray);
+}
+
+.flex input::-ms-input-placeholder {
+  color: var(--neutral-gray);
+}
+
+button.ctaBtn {
+  background-color: var(--primary-cyan);
+  padding-inline: 2.625rem;
+  padding-block: 0.75rem;
+  border-radius: 0.75rem;
+  color: white;
+  overflow: hidden;
+  border: 0;
+  cursor: pointer;
+  height: 3.625rem;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+button.ctaBtn:hover {
+  background-color: hsl(180, 61%, 61%);
+  color: white;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.linkItem {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.336);
+  padding-block: 0.75rem;
+  padding-inline: 1.5rem;
+}
+
+.shortenedUrl {
+  color: var(--primary-cyan);
+}
+
+.copyBtn {
+  padding-inline: 1.875rem;
+  padding-block: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: var(--primary-cyan);
+  border: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copied {
+  background-color: var(--primary-dark-violet) !important;
+}
+
+.copied:hover {
+  background-color: hsl(258, 23%, 56%) !important;
+}
+
+.copyBtn:hover {
+  background-color: hsl(180, 61%, 61%);
+  color: white;
+}
+
+.errorMessage {
+  color: var(--secondary-red);
+  font-style: italic;
+  margin-top: 0.25rem;
+  position: absolute;
+  bottom: -2rem;
+}
+
+.flexOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+}
+
+.emptyInput {
+  outline: 2px solid var(--secondary-red) !important;
+}
+
+.emptyInput::placeholder {
+  color: var(--secondary-red) !important;
+}
+
+.emptyInput::-ms-input-placeholder {
+  color: var(--secondary-red) !important;
+}
+
+@media screen and (max-width: 56.25rem) {
+  .flex {
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    justify-content: space-between;
+  }
+  .box {
+    max-height: 15rem;
+    height: 100%;
+    padding-inline: 1.625rem;
+    background-image: url("/images/bg-shorten-mobile.svg");
+    background-position: center;
+  }
+  .errorMessage {
+    position: static;
+  }
+  button.ctaBtn {
+    width: 100%;
+  }
+  .flexOne {
+    width: 100%;
+  }
+  .flexOne input {
+    width: 100%;
+  }
+  .flexLinks {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .copyBtn {
+    width: 100%;
+  }
+
+  .flexLinks {
+    word-break: break-all;
+    gap: 1rem;
+    padding-inline: 0;
+  }
+  .seperator {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .ctaItems {
+    width: 100%;
+    padding-inline: 1.5rem;
+  }
+  .url {
+    padding-inline: 1.5rem;
+  }
+}

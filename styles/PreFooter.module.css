@@ -1,0 +1,43 @@
+.preFooter {
+  padding-block: 6rem;
+  background-image: url("/images/bg-boost-desktop.svg");
+  background-color: var(--primary-dark-violet);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.625rem;
+}
+
+.container button {
+  background-color: var(--primary-cyan);
+  padding-inline: 1.75rem;
+  padding-block: 1rem;
+  border-radius: 2rem;
+  color: white;
+  cursor: pointer;
+  border: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.container button:hover {
+  background-color: hsl(180, 61%, 61%);
+  color: white;
+}
+
+.container .heading {
+  font-size: 2.15rem;
+}
+
+@media screen and (max-width: 56.25rem) {
+  .container .heading {
+    text-align: center;
+    font-size: 1.85rem;
+  }
+}

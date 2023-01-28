@@ -1,0 +1,133 @@
+.statistics {
+  width: 100%;
+  background-color: hsl(230, 25%, 95%);
+  position: relative;
+}
+
+.container {
+  max-width: 69rem;
+  width: 100%;
+  padding-inline: 1rem;
+  margin-inline: auto;
+}
+
+.urlShortener {
+  transform: translateY(calc(-10.5rem / 2));
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 6.75rem;
+}
+
+.heading .mainHeading {
+  font-size: 2.5rem;
+}
+
+.heading p {
+  color: var(--neutral-grayish-violet);
+  font-size: 1.1rem;
+  max-width: 32rem;
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.875rem;
+  position: relative;
+
+  padding-bottom: 7.5rem;
+  position: relative;
+}
+
+.grid::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 0.5rem;
+  background-color: var(--primary-cyan);
+  top: 38%;
+
+  z-index: 1;
+}
+
+.content {
+  padding-bottom: 5rem;
+}
+
+.gridItem {
+  background-color: white;
+  padding-inline: 1.25rem;
+  padding-block: 5.25rem;
+  border-radius: 0.75rem;
+  z-index: 2;
+}
+
+.gridItem .gridHeading {
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.gridItem p {
+  color: var(--neutral-grayish-violet);
+  font-size: 1rem;
+  line-height: 2.5ch;
+}
+
+.circleIcon {
+  --circleSize: 5rem;
+  width: var(--circleSize);
+  height: var(--circleSize);
+  background-color: var(--primary-dark-violet);
+  border-radius: 50%;
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: calc(var(--circleSize) / 2 - var(--circleSize));
+}
+
+.gridItem:nth-child(2) {
+  transform: translateY(2.75rem);
+}
+
+.gridItem:nth-child(3) {
+  transform: translateY(5.5rem);
+}
+
+@media screen and (max-width: 56.25rem) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    padding-bottom: 0;
+  }
+  .content {
+    text-align: center;
+  }
+  .circleIcon {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .grid::before {
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 0.5rem;
+    background-color: var(--primary-cyan);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  .gridItem:nth-child(2) {
+    transform: translateY(0);
+  }
+
+  .gridItem:nth-child(3) {
+    transform: translateY(0);
+  }
+}
